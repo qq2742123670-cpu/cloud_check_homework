@@ -17,7 +17,7 @@ st.set_page_config(page_title="作业提交检查助手", layout="wide", page_ic
 st.markdown("""
 <style>
     section[data-testid="stSidebar"] {
-        width: 350px;
+        width: 350px !important;
     }
     .sub-header {
         font-size: 6rem;
@@ -600,4 +600,5 @@ else:
                 file_name=f['filename'],
                 mime=f['mime'],
                 key=f"dl_norm_{i}"
+
             )
